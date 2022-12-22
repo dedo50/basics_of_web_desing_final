@@ -1,0 +1,71 @@
+body{
+    font-family: sans-serif;
+    background-color: navy;
+}
+.menu_bar{
+background-color: rgb(19, 19, 29);
+height: 80px;
+width: 100;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 5%;
+}
+
+.logo {
+    color: cornsilk;
+    font-size: 30px;
+}
+
+.logo span {
+    color: rgb(0, 89, 172);
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu_bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3;
+}
+
+.menu_bar ul li a:hover {
+    color: rgb(0, 4, 255);
+}
+
+.dropdown__menu{
+    display: none;
+}
+
+.menu_bar ul li :hover .dropdown__menu {
+    display: block ;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(154, 154, 190);
+}
+
+.dropdown__menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown__menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.fas{
+    float: right;
+    margin-left: 0px ;
+    padding-top: 0px ;
+}
